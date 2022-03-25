@@ -85,7 +85,7 @@ function Sidebar  ({ initialSelectedIcon = 'Home'})  {
                 isActive={Boolean(selected === 'Profile')}
                 redirect={'/profile'}
                 />
-               <SidebarOption Icon={CgMoreO} text="More"/>
+               <SidebarOption Icon={CgMoreO} text="More" setSelected={setSelected}/>
                 <div className={style.tweetButton}>Mint</div>
             </div>
             <div className={style.profileButton}>
